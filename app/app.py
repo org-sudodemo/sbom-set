@@ -125,3 +125,6 @@ def generate_prompt4(vulnData):
     return """What is a {} vulnerability?""".format(
         vulnData
     )      
+
+@app.route("/chat/code", methods=["POST"])
+def code():
